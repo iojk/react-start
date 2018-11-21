@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Button from '@material-ui/core/Button';
 
 const Message = props => <div>{props.msg}</div>;
 
@@ -10,12 +11,16 @@ class App extends Component {
       <div className="App">
         <div>
             <Message msg="A Generic Hello World Text" />
-            <Message msg="Creating Reusable React Components" />
+            <Message msg="Creating Reusable React Components" />            
         </div>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
+          </p>
+          <p>
+            <Button variant="raised" color="secondary">Secondary</Button>
+            <i className="material-icons">face</i>
           </p>
           <a
             className="App-link"
