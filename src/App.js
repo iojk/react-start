@@ -4,12 +4,6 @@ import Button from '@material-ui/core/Button';
 import logo from './logo.svg';
 import './App.scss';
 import './Appp.scss';
-import { FontAwesomeIcon } from '../node_modules/@fortawesome/react-fontawesome';
-import { library } from '../node_modules/@fortawesome/fontawesome-svg-core';
-import { fab } from '../node_modules/@fortawesome/free-brands-svg-icons';
-import { faCheckSquare, faCoffee } from '../node_modules/@fortawesome/free-solid-svg-icons';
-
-library.add(fab, faCheckSquare, faCoffee);
 
 const Message = props => <div>{props.msg}</div>;
 
@@ -37,9 +31,6 @@ class App extends Component {
             <Button variant="contained" color="secondary" data-toggle="modal" data-target="#exampleModal">Secondary</Button>
             <i className="material-icons">face</i>
             <i className="material-icons">person</i>
-            <FontAwesomeIcon icon={fab} />
-            <FontAwesomeIcon icon={faCheckSquare} />
-            <FontAwesomeIcon icon={faCoffee} />
           </p>
           <div className="alert alert-danger" role="alert">
             This is a danger alert—check it out!
