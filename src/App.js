@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
 import $ from "jquery";
+import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
 import logo from './logo.svg';
 import './App.scss';
