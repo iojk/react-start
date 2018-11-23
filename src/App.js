@@ -4,6 +4,12 @@ import Button from '@material-ui/core/Button';
 import logo from './logo.svg';
 import './App.scss';
 import './Appp.scss';
+import { FontAwesomeIcon } from '../node_modules/@fortawesome/react-fontawesome';
+import { library } from '../node_modules/@fortawesome/fontawesome-svg-core';
+import { fab } from '../node_modules/@fortawesome/free-brands-svg-icons';
+import { faCheckSquare, faCoffee } from '../node_modules/@fortawesome/free-solid-svg-icons';
+
+library.add(fab, faCheckSquare, faCoffee);
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
