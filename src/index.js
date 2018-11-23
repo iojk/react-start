@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'typeface-roboto'
-import 'material-design-icons/iconfont/material-icons.css'
+import 'typeface-roboto';
+import 'material-design-icons/iconfont/material-icons.css';
+import '../node_modules/bootstrap/scss/bootstrap.scss';
+import "../node_modules/bootstrap/js/dist/modal";
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
