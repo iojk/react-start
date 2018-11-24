@@ -5,6 +5,9 @@ import logo from './logo.svg';
 import './App.scss';
 import './Appp.scss';
 
+import AppHeader from './AppHeader';
+import BootstrapModal from './component/BootstrapModal/BootstrapModal';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faApple } from '@fortawesome/free-brands-svg-icons';
@@ -19,11 +22,12 @@ class App extends Component {
       $(this).on('click',function(){
         $(this).hide();
       });
-    });
-  }
-  render() {
-    return (
-      <div className="App">
+    });    
+  }  
+  render() {    
+    return (   
+      <div className="App">      
+        <AppHeader />
         <header className="App-header">
           <div>
             <Message msg="A Generic Hello World Text" />
@@ -37,6 +41,7 @@ class App extends Component {
             <Button variant="contained" color="secondary" data-toggle="modal" data-target="#exampleModal">Secondary</Button>
             <i className="material-icons">face</i>
             <i className="material-icons">person</i>
+            <i className="fa fa-folder-open"></i>
             <i className="fas fa-stroopwafel"></i>
             <i className="fab fa-font-awesome"></i>
             <FontAwesomeIcon icon={faCheckSquare} />
@@ -55,25 +60,7 @@ class App extends Component {
             Learn React
           </a>
         </header>
-        <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div className="modal-dialog" role="document">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title">Modal title</h5>
-                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div className="modal-body">
-                <p>Modal body text goes here.</p>
-              </div>
-              <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" className="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <BootstrapModal />
       </div>
     );
   }
