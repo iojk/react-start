@@ -20,7 +20,9 @@
     "parcel-bundler": "^1.10.3",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-router5": "^6.5.3",
     "react-scripts": "2.1.1",
+    "router5": "^6.6.2",
     "typeface-roboto": "0.0.54"
   },
   "scripts": {

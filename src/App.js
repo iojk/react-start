@@ -16,6 +16,27 @@ library.add(faApple, faCheckSquare, faCoffee);
 
 const Message = props => <div>{props.msg}</div>;
 
+const menu__list_BootstrapModal = [
+  { link: '/articles', label: 'Articles' },
+  { link: '/contacts', label: 'Contacts' },
+  { link: '/posts', label: 'Posts' }
+];
+
+const buttonset__list_1 = [
+  {
+    btn__text: 'Close',
+    btn__class: 'btn btn-secondary',
+    btn__type: 'button',
+    btn__dismiss: 'modal'
+  },
+  {
+    btn__text: 'Save changes',
+    btn__class: 'btn btn-primary',
+    btn__type: 'button'
+  }
+]
+
+
 class App extends Component {
   componentDidMount() {    
     $('img').each(function(){
@@ -26,7 +47,7 @@ class App extends Component {
   }  
   render() {    
     return (   
-      <div className="App">      
+      <div className="App">
         <AppHeader />
         <header className="App-header">
           <div>
@@ -60,7 +81,7 @@ class App extends Component {
             Learn React
           </a>
         </header>
-        <BootstrapModal />
+        <BootstrapModal menu__list={menu__list_BootstrapModal} buttonset__list={buttonset__list_1} />
       </div>
     );
   }
